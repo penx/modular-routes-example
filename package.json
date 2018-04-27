@@ -1,10 +1,18 @@
 {
   "name": "@penx/modular-routes-example",
   "version": "0.0.1",
+  "private": true,
   "description": "Example application that mounts modules as sub routes",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
   },
   "author": "Alasdair McLeay",
   "license": "ISC",
