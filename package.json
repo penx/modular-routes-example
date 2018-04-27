@@ -7,10 +7,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@penx/modular-subroute-example": "0.0.1",
+    "@penx/modular-subroute-example": "0.0.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
@@ -26,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/penx/modular-routes-example/issues"
   },
-  "homepage": "https://github.com/penx/modular-routes-example#readme"
+  "homepage": "https://penx.github.io/modular-routes-example",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
