@@ -25,9 +25,9 @@ class App extends Component {
           <hr />
 
           <Route exact path="/" render={() => <h1>Home</h1>}/>
-          <Route path="/about" render={(props) => <div><h1>About</h1><Router basename={'/topics'}><Submodule {...props} /></Router></div>} />
-          <Route path="/topics" render={(props) => <div><h1>Topics</h1><Router basename={'/topics'}><Submodule {...props} /></Router></div>} />
-          <Route path="/tbc" render={(props) => <div><h1>TBC</h1><Router basename={'/tbc'}><Submodule {...props} /></Router></div>} />
+          <Route path="/about" render={(props) => <div><h1>About</h1><Router basename={'/modular-routes-example/topics'}><Submodule {...props} /></Router></div>} />
+          <Route path="/topics" render={(props) => <div><h1>Topics</h1><Router basename={'/modular-routes-example/topics'}><Submodule {...props} /></Router></div>} />
+          <Route path="/tbc" render={(props) => <div><h1>TBC</h1><Router basename={'/modular-routes-example/tbc'}><Submodule {...props} /></Router></div>} />
         </div>
       </Router>
     );
