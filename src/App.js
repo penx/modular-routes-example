@@ -5,7 +5,7 @@ import Submodule from "@penx/modular-subroute-example";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={'/modular-routes-example'}>
         <div>
           <ul>
             <li>
