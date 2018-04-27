@@ -1,0 +1,19 @@
+{
+  "name": "@penx/modular-routes-example",
+  "version": "0.0.1",
+  "description": "Example application that mounts modules as sub routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alasdair McLeay",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penx/modular-routes-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/penx/modular-routes-example/issues"
+  },
+  "homepage": "https://github.com/penx/modular-routes-example#readme"
+}
