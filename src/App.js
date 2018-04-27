@@ -1,16 +1,35 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Submodule from "@penx/modular-subroute-example";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/topics">Topics</Link>
+            </li>
+            <li>
+              <Link to="/tbc">TBC</Link>
+            </li>
+          </ul>
+
+          <hr />
+
+          <Route exact path="/" render={() => 'Home'}/>
+          <Route path="/about" component={Submodule} />
+          <Route path="/topics" render={() => <Submodule />} />
+          <Route path="/tbc" render={(props) => <Submodule {...props} />} />
+        </div>
+      </Router>
     );
   }
 }
